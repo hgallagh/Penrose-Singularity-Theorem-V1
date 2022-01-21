@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage{amsbsy,amsmath,amsfonts,amsthm}
+\usepackage{epsfig}
+\usepackage{graphicx} %% this package is for inserting graphics
+\newtheorem{theorem}{Theorem}
+%\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}{Remark}
+\title{The Penrose Singularity Theorem}
+\author{Hannah Gallagher\\ PYS 498 Topology}
+\date{May 2nd, 2019} %Use the format October **, 2018 or \today
+\renewcommand{\baselinestretch}{1}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Abstract}
+ 
+Sir Roger Penrose is known for his great influence on general relativity which can be applied to many other facets of astrophysics today. 
+One of his more significant proofs was his 1965 paper, \textit{Gravitational Collapse and Space-Time Singularities}. Here, he concluded:  ``If the space-time contains a non-compact Cauchy-hyper-surface Sigma and a closed future trapped surface, and if the convergence condition of the time like (respectively null) convergence holds then there are future incomplete null geodesics. To set the stage for this proof, the theory behind manifolds and singularities will be reviewed. Through this paper we will unwrap the meaning behind his theorems and touch upon the different applications (i.e. trapped surfaces) and further research of these concepts. 
+
+
+\section{A Review of Manifolds}
+Throughout the course, we were introduced to the idea of a manifold. Our role as scientists is to create models of real life phenomenon and we use mathematics to do exactly that. We must imagine space-time as a curved geometry and that gravitation comes about from that curved geometry. The mathematical way to describe this curved geometry is to define a differentiable manifold. This would be a type of set that locally, appears to be flat, but is curved nonetheless. Something that must be stressed is that of the dimensionality n of the Euclidean spaces. Every piece of this differentiable manifold this dimensionality of n must be the same; only at that moment may we say that the manifold is of dimension n. In the first figure, a differentiable manifold of tangents space, $T_p$, is illustrated. 
+\begin{figure}[ht]\begin{center}\includegraphics[, origin=c,width=2.5in]{IMG_4316.JPG}
+\caption{Differentiable Manifold}\label{fig:Manifold}\end{center}\end{figure} 
+
+\par Another name for a differentialble manifold is a diffeomorphism where given two manifolds M and N, a differentiable map f : M to N if it is a bijection and its inverse $f^{-−1}$ : N to  M is continuously differentiable. 
+
+\section{Light Cones}
+A light cone is a visual representation of what information can propagate from a point A to point B. Point B can be influenced by A. The null line means that it takes the speed of light to get to that point. The points that lie outside of the light cone then this is the where to build up the trapped surface. This casual structure allows you to draw a Penrose diagram. Call the light cone the black hole in question. Can you ever escape and the answer is no because it has to be faster than light.
+
+\begin{figure}[ht]\begin{center}\includegraphics[, origin=c,width=2.5in]{IMG_4317.JPG}
+\caption{Along the null line is the idea of the boundary caused by the speed of light. Anywhere outside of the light cone is virtually impossible as the escape velocity would have to be faster than the speed of light.} \label{fig:Euler_pic}\end{center}\end{figure} 
+
+
+
+
+
+\section{Christoffel Symbols}
+
+
+\par Christoffel symbols are given by all the ways in which curvature manifests itself rely on something called a "connection" which gives us a way of relating vectors in the tangent spaces of nearby points. These factor a great deal into geodesics.
+
+\begin{figure}[ht]\begin{center}\includegraphics[angle, origin=c,width=5in]{IMG_4088.JPG}
+\caption{The Christoffel symbols are fundamental to General Relativity.} \label{fig:Euler_pic}\end{center}\end{figure}
+
+
+\section{Geodesics} 
+\par As stemming from the Latin meaning of the Earth, a geodesic is on a curved surface, the shortest distance between two points. We live on a curved earth so that is why when we fly to Europe, we fly over Greenland and not digging a tunnel through the deep sea and molten crust. The geodesic equation uses the Christoffel symbol introduced above to further model this most direct path in Lorentzian space-time. These equations are fundamental to ones understanding of General Relativity. 
+
+THE GEODESIC EQUATION 
+
+\begin{equation}
+    \frac{d^2 x ^ \mu}{d \lambda ^2} + \Gamma^\mu_\rho_\sigma \frac{dx^\rho}{d \lambda} \frac{d x^\sigma}{d \lambda} = 0 
+\end{equation}
+
+
+
+\begin{figure}[ht]\begin{center}\includegraphics[angle, origin=c,width=2.5in]{IMG_4315.JPG}
+\caption{These cylindrical shells represent how one must stay within the light-cones of a hypersurface.} \label{fig:Euler_pic}\end{center}\end{figure} 
+
+
+
+\section{What is a Singularity?} 
+
+
+\par A singularity is a place where geodesics end. In the Hawking-Penrose theorems, the math demonstrates that once collapse reaches a certain point, the subsequent advancement into a singularity is unavoidable. This goes back to geodesic incompleteness, where geodesics are put simply, straight lines; thus, geodesic incompleteness is when a straight line stops abruptly. There a multitude of situations when geodesic incompleteness occurs, such as in black holes. Say there was a large black hole present in our space, the event horizon of said black hole is often where all these different singularities occur. It is ubiquitous with the idea of dividing a number by zero; the laws of mathematics and physics are cast aside in these situations and unexpected results come about. We will expand upon these ideas later in the paper. 
+
+\section{The Evolution of the Singularity Theorems}
+
+Now, a great deal of general relativity stems from Einstein's work. In this case it is Einstein's field equation as shown below:
+
+EINSTEIN'S FIELD EQUATION 
+
+\begin{equation}
+    R _\mu_\nu-\frac{1}{2}Rg_\mu_\nu + \Lambda g_\mu_\nu = \frac{8 \pi G} {c^4}T_\mu_\nu
+\end{equation}
+
+\par However, when it comes to singularities, Einstein was no expert. The real beginning of this notion of reaching a point of no return for gravitational collapse is when Raychaudhuri developed his focusing equation and subsequent theorem.
+
+RAYCHAUDHURI AND KOMAR THEOREM 
+
+\begin{equation} 
+    T_\mu_\nu = \varrho u_\mu u_\nu + p( g_\mu_\nu + u_\mu u_\nu), u^\mu u_\mu = -1
+\end{equation} 
+
+Raychaudhuri's focusing equation simply came from some manipulation of the Ricci scalar identity. The biggest takeaway from this theorem is that it did not necessarily prove anything for singularities, but this gave Penrose the tools for geodesics and fluid flow to thus prove his own theorem. 
+
+
+\section{Gravitational Collapse and Space-time Singularities}
+
+\par Aside from the idea of a singularity, Penrose developed the notion of a closed trapped surface. This was Penrose's clever way of escaping a gravitational field. A trapped surface is a surface in which light is not moving away from the black hole. There is more depth to this topic and the reader may find that the definition of a singularity is quite nebulous to pin down.  
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=2.5in]{IMG_4277.JPG}
+\caption{A pictoral diagram of Penrose's 1965 singularity theorem} \label{fig:Euler_pic}\end{center}\end{figure} 
+\par 
+Penrose's proof provided future scientists with the tools to further understand black holes and their event horizons. The recent accomplishment of obtaining the first black hole image is another long chain of research pressing closer to the truth. With the aid of adaptive optics and a more thorough understanding from these theorems, physicists will fabricate a much clearer view of the universe. 
+
+\begin{thebibliography}{}
+
+\bibitem{Carslaw}
+Carroll, Sean M. {\it An Introduction to General Relativity; Spacetime and Geometry}. Pearson, 2004.
+
+\bibitem{Solomon}
+Curiel, Erik. {\it Singularities and Black Holes}. Stanford Encyclopedia of Philosophy, Stanford University, 27 Feb. 2019, plato.stanford.edu/entries/spacetime-singularities/.
+
+\bibitem{Aczel}
+Penrose, Roger. {\it Gravitational Collapse and Space-Time Singularities}. Birkbeck College, 1965.
+
+\bibitem{Roger} 
+Penrose, Roger. {\it Episode 28: Roger Penrose on Spacetime, Consciousness, and the Universe.} Sean Carroll, 7 Jan. 2019, www.preposterousuniverse.com/podcast/2019/01/07/episode-28-roger-penrose-on-spacetime-consciousness-and-the-universe/.
+
+
+\bibitem{Kammler}
+Schutz, Bernard. {\it A First Course in General Relativity}. Cambridge, 2009.
+
+\bibitem{Arago}
+Senovilla, Jose; Garfinkle, David. {\it The 1965 Penrose singularity theorem}. Randall Laboratory of Physics, 2015.
+
+
+
+
+
+ced
+\end{thebibliography}
+
+
+\end{document}
